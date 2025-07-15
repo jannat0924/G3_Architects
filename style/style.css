@@ -91,10 +91,9 @@ text-align: center;
 }
 .feature-title{
   font-size: 1.7rem;
+  margin-bottom: 10px;
 }
-#light{
 
-}
 #bold{
   font-weight: bold ;
 }
@@ -102,6 +101,37 @@ text-align: center;
   color: rgb(255, 144, 14);
 }
 
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.fact-description{
+  width: 420px;
+  margin-bottom: 70px;
+  margin-top: 0px;
+}
+.fact-card{
+border: 1px solid rgb(255, 144, 14);
+border-radius: 8px;
+width: 150px;
+height: 150px;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+}
+
+.fact-number{
+  color: rgb(66, 66, 66);
+font-size: 1.8rem;
+font-weight: 600;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.fact-name{
+  font-size: 0.8rem;
+font-weight: 600;
+}
 
 
 
@@ -109,11 +139,19 @@ text-align: center;
      .navbar , .nav-links , .teams{
   flex-direction: column;
      }
-     .team-img-container{
+     .team-img-container , .facts-container{
       grid-template-columns: repeat(1,1fr);
      }
      .our-features{
   margin-left: 20px;
+}
+.facts-container{
+  justify-items: center;
+  gap: 18px;
+}
+.fact-description{
+  width: 100%;
+
 }
 }
 
@@ -124,4 +162,5 @@ text-align: center;
           .our-features{
   margin-left: 45px;
 }
+
 }
